@@ -1,3 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
+    max-width: 1440px;
     background-color: #EDF3F8;
 }
+button, input {
+    border: none;
+    font: inherit;
+    line-height: normal;
+}
+header > nav {
+    margin: 40px auto 74px;
+    display: flex;
+    align-items: center;
+    width: 1110px;
+    height: 48px;
+    position: relative;
+}
+.logo {
+    padding-right: 64.34px;
+}
+nav > button {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.12px;
+    position: absolute;
+    right: 0;
+    width: 173px;
+    height: 48px;
+    background: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    color: #fbfcfe;
+}
+
