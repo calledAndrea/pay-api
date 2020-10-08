@@ -6,34 +6,37 @@
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 100;
+    font-display: swap;
     src: local(''),
-    url('../fonts/public-sans-v4-latin-100.woff2') format('woff2'),
-    url('../fonts/public-sans-v4-latin-100.woff') format('woff');
+    url('/fonts/public-sans-v4-latin-100.woff2') format('woff2'),
+    url('/fonts/public-sans-v4-latin-100.woff') format('woff');
 }
 @font-face {
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: local(''),
-    url('../fonts/public-sans-v4-latin-regular.woff2') format('woff2'),
-    url('../fonts/public-sans-v4-latin-regular.woff') format('woff');
+    url('/fonts/public-sans-v4-latin-regular.woff2') format('woff2'),
+    url('/fonts/public-sans-v4-latin-regular.woff') format('woff');
 }
 @font-face {
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 700;
+    font-display: swap;
     src: local(''),
-    url('../fonts/public-sans-v4-latin-700.woff2') format('woff2'),
-    url('../fonts/public-sans-v4-latin-700.woff') format('woff');
+    url(fonts/public-sans-v4-latin-700.woff2) format('woff2'),
+    url(fonts/public-sans-v4-latin-700.woff) format('woff');
 }
-
 @font-face {
     font-family: 'DM Serif Display';
     font-style: normal;
     font-weight: 400;
+    font-display: swap;
     src: local('DM Serif Display Regular'), local('DMSerifDisplay-Regular'),
-    url('../fonts/dm-serif-display-v4-latin-regular.woff2') format('woff2'),
-    url('../fonts/dm-serif-display-v4-latin-regular.woff') format('woff');
+    url(fonts/dm-serif-display-v4-latin-regular.woff2) format('woff2'),
+    url(fonts/dm-serif-display-v4-latin-regular.woff) format('woff');
 }
 button, input {
     border: none;
@@ -41,7 +44,7 @@ button, input {
     line-height: normal;
 }
 body {
-    max-width: 1440px;
+    width: 1440px;
     background-color: #EDF3F8;
 }
 
