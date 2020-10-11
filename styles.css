@@ -1,15 +1,11 @@
-* {
-    margin: 0;
-    padding: 0;
-}
 @font-face {
     font-family: 'Public Sans';
     font-style: normal;
     font-weight: 100;
     font-display: swap;
     src: local(''),
-    url('/fonts/public-sans-v4-latin-100.woff2') format('woff2'),
-    url('/fonts/public-sans-v4-latin-100.woff') format('woff');
+    url(fonts/public-sans-v4-latin-100.woff2) format('woff2'),
+    url(fonts/public-sans-v4-latin-100.woff) format('woff');
 }
 @font-face {
     font-family: 'Public Sans';
@@ -17,8 +13,8 @@
     font-weight: 400;
     font-display: swap;
     src: local(''),
-    url('/fonts/public-sans-v4-latin-regular.woff2') format('woff2'),
-    url('/fonts/public-sans-v4-latin-regular.woff') format('woff');
+    url(fonts/public-sans-v4-latin-regular.woff2) format('woff2'),
+    url(fonts/public-sans-v4-latin-regular.woff) format('woff');
 }
 @font-face {
     font-family: 'Public Sans';
@@ -38,53 +34,142 @@
     url(fonts/dm-serif-display-v4-latin-regular.woff2) format('woff2'),
     url(fonts/dm-serif-display-v4-latin-regular.woff) format('woff');
 }
+* {
+    margin: 0;
+    padding: 0;
+}
 button, input {
     border: none;
     font: inherit;
     line-height: normal;
 }
 body {
-    width: 1440px;
+    min-width: 1440px;
+}
+.page-wrap {
     background-color: #EDF3F8;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.button-home {
+    background: #BA4270;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    width: 173px;
+    height: 48px;
+    font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
+    color: #FBFCFE;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: -0.12px;
+}
+p {
+    font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
+    font-size: 15px;
 }
 
-/*
-HEADER
-*/
+/* END OF DEFAULTS */
 
-header > nav {
-    margin: 40px auto 74px;
-    display: flex;
-    align-items: center;
-    width: 1110px;
-    height: 48px;
+header {
+    height: 735px;
+    margin: 0 auto;
     position: relative;
+    width: 1110px;
+}
+nav {
+    align-items: center;
+    display: flex;
+    height: 48px;
+    padding: 40px 0 152px;
+    position: relative;
+    width: 100%;
 }
 .logo {
     padding-right: 64.34px;
 }
-nav > button {
-    font-family: 'Public Sans', sans-serif;
-    color: #fbfcfe;
-    font-size: 15px;
+a {
+    font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
     font-weight: 700;
-    letter-spacing: -0.12px;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 40px;
+}
+.top a {
+    color: #36536B;
+}
+.bottom a {
+    color: #FBFCFE
+}
+nav > button {
     position: absolute;
     right: 0;
-    width: 173px;
-    height: 48px;
-    background: #BA4270;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-    border-radius: 24px;
 }
-.circle-img {
+.circlebg-header {
     position: absolute;
+    right: -132px;
     top: -172px;
-    left: 800px;
 }
 .phone-img {
     position: absolute;
-    left: 917px;
-    top: 162px;
+    right: 260px;
+    top: 107px;
 }
+header h1 {
+    width: 546px;
+    height: 243px;
+    font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.55px;
+    color: #36536B;
+    padding-bottom: 21px;
+}
+.header-text {
+    display: flex;
+    background: #FBFCFE99;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+    width: 445px;
+    height: 48px;
+    margin-bottom: 16px;
+    position: relative;
+}
+.p-button {
+    font-weight: 700;
+    color: #36536B80;
+    padding-left: 27px;
+    padding-top: 15px;
+}
+.p-button + button {
+    position: absolute;
+    right: 0;
+}
+.header-text + p {
+    color: #6C8294;
+    font-weight: 400;
+    padding-left: 27px;
+}
+.work-with {
+    background-color: #1B262F;
+    color: #FBFCFE;
+    height: 472px;
+    margin-left: 21px;
+    position: relative;
+}
+.work-with > img {
+    clip-path: inset(359px 0 0 0);
+    left: -208px;
+    top: -359px;
+    position: absolute;
+}
+.work-with h2 {
+    font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
+
+}
+
+
+
+
 
