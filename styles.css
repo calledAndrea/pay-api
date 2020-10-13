@@ -54,13 +54,15 @@ button {
     letter-spacing: -0.12px;
     font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
     font-size: 15px;
+    font-weight: 700;
 }
 .button-home {
     background: #BA4270;
     box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
-    width: 173px;
     height: 48px;
-    font-weight: 700;
+    position: absolute;
+    right: 0;
+    width: 173px;
 }
 h2 {
     font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
@@ -70,7 +72,13 @@ h2 {
     line-height: 56px;
 }
 h3 {
-    font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
+    color: #36536B;
+    font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.14px;
+    line-height: 25px;
+    padding: 32px 0 16px;
 }
 p {
     font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
@@ -94,13 +102,11 @@ header {
 nav {
     align-items: center;
     display: flex;
+    position: relative;
+}
+.top {
     height: 48px;
     padding: 40px 0 152px;
-    position: relative;
-    width: 100%;
-}
-.logo {
-    padding-right: 64.34px;
 }
 a {
     font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
@@ -109,15 +115,11 @@ a {
     text-decoration: none;
     padding-right: 40px;
 }
+.logo {
+    padding-right: 64.34px;
+}
 .top a {
     color: #36536B;
-}
-.bottom a {
-    color: #FBFCFE
-}
-nav > button {
-    position: absolute;
-    right: 0;
 }
 .circlebg-header {
     position: absolute;
@@ -140,29 +142,25 @@ header h1 {
     color: #36536B;
     padding-bottom: 21px;
 }
-.header-text {
-    display: flex;
-    background: #FBFCFE99;
-    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+div.p-button {
+    background: #FBFCFE;
     border-radius: 24px;
-    width: 445px;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    display: flex;
     height: 48px;
-    margin-bottom: 16px;
     position: relative;
+    width: 445px;
 }
-.p-button {
+.p-button > p {
     font-weight: 700;
     color: #36536B80;
     padding-left: 27px;
     padding-top: 15px;
 }
-.p-button + button {
-    position: absolute;
-    right: 0;
-}
-.header-text + p {
+.p-button + p {
     color: #6C8294;
     font-weight: 400;
+    margin-top: 16px;
     padding-left: 27px;
 }
 .work {
@@ -184,15 +182,13 @@ div.work-text {
     padding-right: 131px;
     width: 445px;
 }
-
-/* TODO - set h2, h3 and btn default styles at top */
-
 .work-text h2 {
     padding-bottom: 24px;
 }
 .work-text p {
     font-weight: 100;
     line-height: 28px;
+    opacity: 0.7;
     padding-bottom: 32px;
 }
 .work-text button {
@@ -211,13 +207,98 @@ div.work-logos {
     justify-content: space-between;
     width: 536px;
 }
-/* used to center 1 logo in grid column */
+/* used to center an item in it's grid column */
 .work-logos > .centered {
     justify-self: center;
 }
-/*div.easy > img {
-
-
-}*/
-
+.easy-simple {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 94px auto 40px;
+    position: relative;
+    width: 1110px;
+}
+.easy-simple h2 {
+    color: #36536B;
+    padding-bottom: 24px;
+}
+.easy-simple p {
+    color: #6C8294;
+    font-weight: 100;
+    line-height: 28px;
+}
+.easy-simple > img {
+    position: absolute;
+    right: -560px;
+    top: 350px;
+}
+.row {
+    display: flex;
+}
+.row-1 img {
+    left: -55px;
+    position: relative;
+}
+.row-1-text {
+    padding-top: 116px;
+    margin-left: -36px;
+    width: 445px;
+}
+.row-2 {
+    margin-top: -10px;
+}
+.row-2-text {
+    flex-shrink: 0;
+    padding-top: 237px;
+    width: 445px;
+}
+.row-2 img {
+    left: 43px;
+    flex-shrink: 0;
+    position: relative;
+}
+.uses {
+    display: flex;
+    height: 279px;
+    justify-content: space-between;
+    margin: 0 auto 96px;
+    width: 1110px;
+}
+.uses > div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    text-align: center;
+    width: 350px;
+}
+.uses p {
+    color: #6C8294;
+    font-weight: 100;
+    line-height: 25px;
+    letter-spacing: -0.12px;
+}
+.ready {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 96px;
+    width: 1110px;
+}
+.ready h2 {
+    color: #36536B;
+}
+footer {
+    background: #1B262F;
+    height: 100px;
+}
+.bottom {
+    width: 1110px;
+    height: 100%;
+    margin: 0 auto;
+}
+.bottom a {
+    color: #FBFCFE
+}
 
