@@ -64,6 +64,13 @@ button {
     right: 0;
     width: 173px;
 }
+a {
+    font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-decoration: none;
+    padding-right: 40px;
+}
 h2 {
     font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
     font-size: 48px;
@@ -84,15 +91,15 @@ p {
     font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
     font-size: 15px;
 }
+
+/** END OF DEFAULTS **/
+
 .page-wrap {
     background-color: #EDF3F8;
     width: 100%;
     overflow: hidden;
     position: relative;
 }
-
-/** END OF DEFAULTS **/
-
 header {
     height: 735px;
     margin: 0 auto;
@@ -107,13 +114,6 @@ nav {
 .top {
     height: 48px;
     padding: 40px 0 152px;
-}
-a {
-    font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
-    text-decoration: none;
-    padding-right: 40px;
 }
 .logo {
     padding-right: 64.34px;
@@ -279,11 +279,19 @@ div.work-logos {
     line-height: 25px;
     letter-spacing: -0.12px;
 }
+.ready-wrap {
+    background-color: #EDF3F8;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 2;
+}
 .ready {
     align-items: center;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto 96px;
+    padding-bottom: 96px;
     width: 1110px;
 }
 .ready h2 {
@@ -292,13 +300,34 @@ div.work-logos {
 footer {
     background: #1B262F;
     height: 100px;
+    position: relative;
 }
 .bottom {
-    width: 1110px;
     height: 100%;
+    justify-content: space-between;
     margin: 0 auto;
+    width: 1110px;
 }
 .bottom a {
     color: #FBFCFE
+}
+.nav-left {
+    align-items: center;
+    display: flex;
+    width: 432px;
+}
+.nav-left > * {
+    flex-shrink: 0;
+}
+.icons {
+    display: flex;
+    justify-content: space-between;
+    width: 120px;
+}
+.circlebg-footer {
+    position: absolute;
+    bottom: -544px;
+    right: -390px;
+    z-index: 1;
 }
 
