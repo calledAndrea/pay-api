@@ -71,6 +71,11 @@ a {
     text-decoration: none;
     padding-right: 40px;
 }
+h1 {
+    color: #36536B;
+    font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
+    font-weight: 400;
+}
 h2 {
     font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
     font-size: 48px;
@@ -78,21 +83,14 @@ h2 {
     letter-spacing: -0.37px;
     line-height: 56px;
 }
-h3 {
-    color: #36536B;
-    font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: -0.14px;
-    line-height: 25px;
-    padding: 32px 0 16px;
-}
 p {
     font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
     font-size: 15px;
 }
 
+
 /** END OF DEFAULTS **/
+
 
 .page-wrap {
     background-color: #EDF3F8;
@@ -100,7 +98,7 @@ p {
     overflow: hidden;
     position: relative;
 }
-header {
+header.home {
     height: 735px;
     margin: 0 auto;
     position: relative;
@@ -131,16 +129,13 @@ nav {
     right: 260px;
     top: 107px;
 }
-header h1 {
-    width: 546px;
+h1.home {
     height: 243px;
-    font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
-    font-weight: 400;
     font-size: 72px;
     line-height: 72px;
     letter-spacing: -0.55px;
-    color: #36536B;
     padding-bottom: 21px;
+    width: 546px;
 }
 div.p-button {
     background: #FBFCFE;
@@ -273,6 +268,15 @@ div.work-logos {
     text-align: center;
     width: 350px;
 }
+.uses h3 {
+    color: #36536B;
+    font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: -0.14px;
+    line-height: 25px;
+    padding: 32px 0 16px;
+}
 .uses p {
     color: #6C8294;
     font-weight: 100;
@@ -331,3 +335,58 @@ footer {
     z-index: 1;
 }
 
+
+/** END OF HOME PAGE **/
+
+
+header.about {
+    height: 762px;
+    margin: 0 auto;
+    position: relative;
+    width: 1110px;
+}
+h1.about {
+    height: 189px;
+    font-size: 56px;
+    letter-spacing: -0.43px;
+    line-height: 56px;
+    padding-bottom: 51px;
+    width: 730px;
+}
+.circlebg-other {
+    position: absolute;
+    right: -140px;
+    top: -527px;
+}
+.subheader {
+    display: flex;
+    flex-direction: column;
+    height: 492px;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 921px;
+}
+.subheader > span {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.subheader h3 {
+    color: #36536B;
+    flex-shrink: 0;
+    font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    font-weight: 400;
+    letter-spacing: -0.25px;
+    line-height: 40px;
+}
+.subheader p {
+    color: #6C8294;
+    flex-shrink: 0;
+    font-weight: 100;
+    line-height: 28px;
+    width: 635px;
+}
+span > .p-padding {
+    padding-bottom: 56px;
+}
