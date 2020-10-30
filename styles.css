@@ -55,7 +55,7 @@ button {
   height: 48px;
   letter-spacing: -0.12px;
 }
-.button-home {
+.button-all {
   background: #BA4270;
   box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
   color: #FBFCFE;
@@ -335,7 +335,7 @@ footer {
 }
 
 
-/** END OF home PAGE **/
+/** END OF HOME PAGE **/
 
 
 header.about {
@@ -374,8 +374,8 @@ header.about {
   width: 100%;
 }
 
-/* applies to both spans in
-.subheader & .more-about sections */
+/* : applies to both spans in
+.subheader & .more-about sections : */
 span h3 {
   color: #36536B;
   flex-shrink: 0;
@@ -395,7 +395,7 @@ span p {
 span > .p-padding {
   padding-bottom: 56px;
 }
-/* ------ */
+/* : ------ : */
 
 div.middle-img {
   background-image: url(assets/about/desktop/image-team-members.jpg);
@@ -455,11 +455,9 @@ div.more-about {
 }
 /* .ready and footer sections
 of ABOUT already set from Home Page */
+/** END OF ABOUT PAGE **/
 
-
-/** END OF about PAGE **/
-
-
+/** PRICING **/
 header.pricing {
   height: 226px;
   margin: 0 auto 72px;
@@ -467,8 +465,8 @@ header.pricing {
   width: 1110px;
 }
 
-/* nav styles already set,
-same as about page */
+/* top nav styles already set,
+same as ABOUT page */
 
 .pricing h1 {
   font-size: 56px;
@@ -542,4 +540,27 @@ h5.not-checked {
   color: #36536B;
   margin-top: 24px;
   width: 168px;
+}
+
+/* .ready and footer sections
+of PRICING already set from HOME Page */
+
+/** END OF PRICING PAGE **/
+
+header.contact {
+  height: 303px;
+  margin: 0 auto 43px;
+  position: relative;
+  width: 1110px;
+}
+
+/* top nav styles already set,
+same as ABOUT page */
+
+.contact h1 {
+  height: 133px;
+  font-size: 56px;
+  letter-spacing: -0.43px;
+  line-height: 56px;
+  width: 730px;
 }
