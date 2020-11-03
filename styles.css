@@ -2,7 +2,7 @@
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 100;
-  font-display: swap;
+  /*font-display: swap;*/
   src: local(''),
   url(fonts/public-sans-v4-latin-100.woff2) format('woff2'),
   url(fonts/public-sans-v4-latin-100.woff) format('woff');
@@ -11,7 +11,7 @@
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  /*font-display: swap;*/
   src: local(''),
   url(fonts/public-sans-v4-latin-regular.woff2) format('woff2'),
   url(fonts/public-sans-v4-latin-regular.woff) format('woff');
@@ -20,7 +20,7 @@
   font-family: 'Public Sans';
   font-style: normal;
   font-weight: 700;
-  font-display: swap;
+  /*font-display: swap;*/
   src: local(''),
   url(fonts/public-sans-v4-latin-700.woff2) format('woff2'),
   url(fonts/public-sans-v4-latin-700.woff) format('woff');
@@ -29,7 +29,7 @@
   font-family: 'DM Serif Display';
   font-style: normal;
   font-weight: 400;
-  font-display: swap;
+  /*font-display: swap;*/
   src: local('DM Serif Display Regular'), local('DMSerifDisplay-Regular'),
   url(fonts/dm-serif-display-v4-latin-regular.woff2) format('woff2'),
   url(fonts/dm-serif-display-v4-latin-regular.woff) format('woff');
@@ -192,7 +192,7 @@ div.work-text {
   color: #FBFCFE;
   width: 129px;
 }
-div.work-logos {
+div.work-companies {
   align-items: center;
   display: inline-grid;
   gap: 39px 0;
@@ -201,8 +201,8 @@ div.work-logos {
   justify-content: space-between;
   width: 536px;
 }
-/* used to center an item in it's grid column */
-.work-logos > .centered {
+/* used to center this item in it's grid column */
+.centered {
   justify-self: center;
 }
 .easy-simple {
@@ -544,9 +544,9 @@ h5.not-checked {
 
 /* .ready and footer sections
 of PRICING already set from HOME Page */
-
 /** END OF PRICING PAGE **/
 
+/** CONTACT **/
 header.contact {
   height: 303px;
   margin: 0 auto 43px;
@@ -555,7 +555,7 @@ header.contact {
 }
 
 /* top nav styles already set,
-same as ABOUT page */
+same as ABOUT/PRICING page */
 
 .contact h1 {
   height: 133px;
@@ -563,4 +563,102 @@ same as ABOUT page */
   letter-spacing: -0.43px;
   line-height: 56px;
   width: 730px;
+}
+section {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 93px;
+  width: 1110px;
+}
+form.section-left {
+  font-family: 'Public Sans', 'Trebuchet MS', sans-serif;
+  font-size: 15px;
+  font-weight: 100;
+  letter-spacing: -0.12px;
+  width: 445px;
+}
+/* INPUT & TEXTAREA styles */
+input[type=text], input[type=email], textarea {
+  background-color: #EDF3F8;
+  border-bottom: 1px solid #36536B80;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  box-sizing: border-box;
+  color: #36536B80;
+  font: inherit;
+  height: 42px;
+  letter-spacing: inherit;
+  line-height: 25px;
+  margin-bottom: 24px;
+  padding-left: 20px;
+  width: 100%;
+}
+textarea {
+  height: 89px;
+}
+div.checkbox-wrap {
+  height: 50px;
+  margin-bottom: 24px;
+  width: 100%;
+}
+label {
+  color: #36536B;
+  display: inline-block;
+  line-height: 25px;
+  padding-left: 26px;
+  width: 395px;
+}
+input[type="checkbox"] {
+  appearance: none;
+  background-color: #36536B40;
+  border: 0;
+  bottom: 6px;
+  height: 24px;
+  position: relative;
+  width: 24px;
+}
+input[type="submit"] {
+  background-color: transparent;
+  border: 1px solid #36536B;
+  border-radius: 24px;
+  box-sizing: border-box;
+  color: #36536B;
+  letter-spacing: inherit;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: 700;
+  height: 48px;
+  width: 152px;
+}
+div.section-right {
+  height: 208px;
+  padding-top: 122px;
+  width: 541px;
+}
+.section-right h3 {
+  color: #36536B;
+  font-family: 'DM Serif Display', 'Trebuchet MS', sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  height: 64px;
+  letter-spacing: -0.18px;
+  line-height: 32px;
+  opacity: 0.75;
+  padding-bottom: 40px;
+  width: 445px;
+}
+div.companies-right {
+  align-items: center;
+  display: inline-grid;
+  gap: 40px 0;
+  grid-template: 31px 33px / repeat(3, auto);
+  height: 104px;
+  justify-content: space-between;
+  width: 541px;
+}
+/* changes Fill color of SVG file */
+img.filtered-blue {
+  filter: brightness(0) saturate(100%) invert(29%) sepia(33%) saturate(592%) hue-rotate(165deg) brightness(92%) contrast(90%);
 }

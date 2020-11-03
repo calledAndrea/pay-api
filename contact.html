@@ -30,23 +30,57 @@
       <h1>Submit a help request and we’ll get in touch shortly.</h1>
     </header>
 
-    Name
-    Email Address
-    Company Name
-    Title
-    Message
-    Stay up-to-date with company announcements and updates to our API
-    Submit
+    <section>
+      <form class="section-left">
+        <input type="text" placeholder="Name">
+        <br>
+        <input type="email" placeholder="Email Address">
+        <br>
+        <input type="text" placeholder="Company Name">
+        <br>
+        <input type="text" placeholder="Title">
+        <br>
+        <textarea placeholder="Message" cols="20" rows="10"></textarea>
+        <div class="checkbox-wrap">
+          <input id="checkbox" type="checkbox"><label for="checkbox">Stay up-to-date with company announcements and updates to our API</label>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
 
-    Join the thousands of innovators already building with us
+      <div class="section-right">
+        <h3>Join the thousands of innovators already building with us</h3>
+        <div class="companies-right">
+          <img class="filtered-blue" src="assets/tesla.svg" alt="Tesla Logo"><img class="filtered-blue" src="assets/microsoft.svg" alt="Microsoft Logo"><img class="filtered-blue" src="assets/hewlett-packard.svg" alt="HP Logo"><img class="filtered-blue" src="assets/oracle.svg" alt="Oracle Logo"><img class="filtered-blue centered" src="assets/google.svg" alt="Google Logo"><img class="filtered-blue" src="assets/nvidia.svg" alt="Nvidia Logo">
+        </div>
+      </div>
+    </section>
 
-    Ready to start?
-    Enter email address
-    Schedule a Demo
+    <!--* Absolutely Positioned item here to deal with z-index -->
+    <img class="circlebg-footer" src="assets/bg-pattern-circle.svg" alt="Background Pattern">
+    <!--*----->
 
-    Pricing
-    About
-    Contact
+    <div class="ready-wrap">
+      <div class="ready">
+        <h2>Ready to start?</h2>
+        <div class="p-button">
+          <p>Enter email address</p><button class="button-all">Schedule a Demo</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <nav class="bottom">
+        <div class="nav-left">
+          <img class="logo" src="assets/logo-white.svg" alt="Pay API logo">
+          <a href="#">Pricing</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="icons">
+          <img src="assets/facebook.svg" alt="facebook icon"><img src="assets/twitter.svg" alt="twitter icon"><img src="assets/linkedin.svg" alt="linkedin icon">
+        </div>
+      </nav>
+    </footer>
+
   </div>
 </body>
 
