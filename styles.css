@@ -38,6 +38,20 @@
   margin: 0;
   padding: 0;
 }
+.my-footer {
+  background: #1B262F;
+}
+.attribution {
+  color: #EDF3F8;
+  font-size: 12px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+.attribution a {
+  color: #BA4270;
+  font-size: 12px;
+  padding: 0;
+}
 body {
   min-width: 1440px;
 }
