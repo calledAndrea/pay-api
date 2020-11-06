@@ -8,28 +8,29 @@
   <link href="styles.css" type="text/css" rel="stylesheet">
   <title>PayAPI</title>
 </head>
-<!-- TODO - change buttons to links? -->
+<!-- TODO: add JS to display message when form is submitted, change p-button sections to input. -->
+<!-- ? add JS to seed email from Home into Contact page? -->
+
 <body>
   <div class="page-wrap">
-
-    <!-- A.P. Pattern Imgs -->
+    <!-- #region -->
     <img class="circlebg-header" src="assets/bg-pattern-circle.svg" alt="Background Pattern">
     <img class="phone-img" src="assets/home/illustration-phone-mockup.svg" alt="Phone Notification Mockup">
-    <!-- ---- -->
+    <!-- #endregion -->
 
     <header class="home">
       <nav class="top home">
-        <img class="logo" src="assets/logo.svg" alt="Pay API logo">
-        <a href="pricing.html" target="_blank">Pricing</a>
-        <a href="about.html" target="_blank">About</a>
-        <a href="contact.html" target="_blank">Contact</a>
-        <button class="button-all">Schedule a Demo</button>
+        <a class="logo" href="index.html"><img src="assets/logo.svg" alt="Pay API logo"></a>
+        <a href="pricing.html">Pricing</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+        <a class="a-button-all" href="contact.html">Schedule a Demo</a>
       </nav>
       <h1 class="home">Start building with our APIs for absolutely free.</h1>
       <div class="p-button">
-        <p>Enter email address</p><button class="button-all">Schedule a Demo</button>
+        <p>Enter email address</p><a class="a-button-all" href="contact.html">Schedule a Demo</a>
       </div>
-      <p>Have any questions? <strong>Contact Us</strong></p>
+      <a href="contact.html">Have any questions? <strong>Contact Us</strong></a>
     </header>
 
     <div class="work">
@@ -38,10 +39,15 @@
         <h2>Who we work with</h2>
         <p>Today, millions of people around the world have successfully connected their accounts to apps they love using our API. We provide developers with the tools they need to create easy and accessible experiences for their users.
         </p>
-        <button>About Us</button>
+        <a href="about.html">About Us</a>
       </div>
       <div class="work-companies">
-        <img src="assets/tesla.svg" alt="Tesla Logo"><img src="assets/microsoft.svg" alt="Microsoft Logo"><img src="assets/hewlett-packard.svg" alt="HP Logo"><img src="assets/oracle.svg" alt="Oracle Logo"><img class="centered" src="assets/google.svg" alt="Google Logo"><img src="assets/nvidia.svg" alt="Nvidia Logo">
+        <img src="assets/tesla.svg" alt="Tesla Logo">
+        <img src="assets/microsoft.svg" alt="Microsoft Logo">
+        <img src="assets/hewlett-packard.svg" alt="HP Logo">
+        <img src="assets/oracle.svg" alt="Oracle Logo">
+        <img class="centered" src="assets/google.svg" alt="Google Logo">
+        <img src="assets/nvidia.svg" alt="Nvidia Logo">
       </div>
     </div>
 
@@ -84,37 +90,38 @@
         <p>It’s easier to set up secure bank payments with us through a flow designed with the user experience in mind. Customers could instantly authenticate their account.</p>
       </div>
     </div>
-    <!--* Absolutely Positioned item here to deal with z-index -->
+    <!-- #region -->
     <img class="circlebg-footer" src="assets/bg-pattern-circle.svg" alt="Background Pattern">
-    <!--*----->
+    <!-- #endregion -->
 
     <div class="ready-wrap">
       <div class="ready">
         <h2>Ready to start?</h2>
         <div class="p-button">
-          <p>Enter email address</p><button class="button-all">Schedule a Demo</button>
+          <p>Enter email address</p><a class="a-button-all" href="contact.html">Schedule a Demo</a>
         </div>
       </div>
     </div>
+
     <footer>
       <nav class="bottom">
         <div class="nav-left">
-          <img class="logo" src="assets/logo-white.svg" alt="Pay API logo">
+          <a class="logo" href="index.html"><img src="assets/logo-white.svg" alt="Pay API logo"></a>
           <a href="pricing.html">Pricing</a>
           <a href="about.html">About</a>
           <a href="contact.html">Contact</a>
         </div>
         <div class="icons">
-          <img src="assets/facebook.svg" alt="facebook icon"><img src="assets/twitter.svg" alt="twitter icon"><img src="assets/linkedin.svg" alt="linkedin icon">
+          <img src="assets/facebook.svg" alt="facebook icon">
+          <img src="assets/twitter.svg" alt="twitter icon">
+          <img src="assets/linkedin.svg" alt="linkedin icon">
         </div>
       </nav>
-    </footer>
-
-    <div class="my-footer">
       <p class="attribution">
         Coded by <a href="https://github.com/calledAndrea" target="_blank">andrea</a>
       </p>
-    </div>
+    </footer>
+
   </div>
 </body>
 
