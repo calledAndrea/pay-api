@@ -579,7 +579,7 @@ same as ABOUT/PRICING page */
   line-height: 56px;
   width: 730px;
 }
-section {
+section.flex {
   display: flex;
   justify-content: space-between;
   margin: 0 auto 93px;
