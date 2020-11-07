@@ -580,7 +580,6 @@ same as ABOUT/PRICING page */
   width: 730px;
 }
 section {
-  align-items: center;
   display: flex;
   justify-content: space-between;
   margin: 0 auto 93px;
